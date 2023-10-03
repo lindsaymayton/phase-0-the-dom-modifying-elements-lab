@@ -3,10 +3,19 @@
   <head>
     <title>Creating and Inserting DOM Elements</title>
   </head>
-  <script type="application/javascript">
-  </script>
   <body>
-    <main id="main"></main>
+    <h1>newHeader = 'victory'</h1>
+    
     <script type="text/javascript" src="index.js"></script>
+    <script type="application/javascript">
+      document.addEventListener('DOMContentLoaded', () => {
+        const mainNode = document.querySelector('main#main');
+        mainNode.remove();
+
+        const headerNode = document.querySelector('h1');
+        console.log(mainNode);
+        console.log(headerNode);
+      });
+    </script>
   </body>
 </html>
